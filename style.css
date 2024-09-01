@@ -1,0 +1,108 @@
+/* accent-color = used in checkbox color  */
+/* backdrop-filter = used for different effects in the background */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: url('bg.jpg') no-repeat;
+    background-size: cover;
+    background-position: center ;
+}
+.wrapper{
+    width: 30rem;
+    background:transparent;
+    border: 2px solid rgba(255, 255, 255, 0.5);
+    backdrop-filter: blur(10px);
+    color: white;
+    border-radius: 12px;
+    padding: 30px 40px;
+}
+.wrapper h1{
+    font-size:36px ;
+    text-align: center;
+    padding: 1rem ;
+}
+.wrapper .input{
+    text-align: center;
+    /* background: yellow; */
+    width: 100%;
+    height: 3rem;
+    margin: 30px 0;
+    position: relative;
+}
+.input input{
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    /* border: none; */
+    border-radius: 2rem;
+    border: 2px solid rgba(255, 255, 255, 0.5);
+    color: #fff;
+    font-size: 15px;
+    padding: 0 20px;
+    
+    
+}
+.input input::placeholder{
+    color: #fff;
+}
+.input i{
+    position: absolute;
+    right: 20px;
+    top: 30%;
+    transform: translate(-50%);
+    font-size: 20px;
+}
+.checkbox{
+    display: flex;
+    justify-content: space-between;
+    margin: -15px 0 15px;
+}
+.checkbox label input{
+    accent-color: #fff;
+    margin-right:5px ;
+}
+.checkbox  a{
+    color: #fff;
+    text-decoration: none;
+}
+.checkbox a:hover{
+    text-decoration: underline;
+}
+.btn{
+    text-align: center;
+    width: 100%;
+    height: 45px;
+    background: #fff;
+    border: none;
+    outline: none;
+    border: 2px solid white;
+    border-radius: 5rem;
+    box-shadow: 0 0 10px rgba(0,0,0,.3);
+    font-size: 16px;
+    color: #333;
+    font-weight: 600;
+    cursor: pointer;
+}
+.register{
+    font-size: 15px;
+    text-align: center;
+    margin: 20px 0 15px;
+
+}
+.register p a{
+    text-decoration: none;
+    color: #fff;
+    font-weight:bold ;
+}
+.register p a:hover{
+    text-decoration: underline;
+}
